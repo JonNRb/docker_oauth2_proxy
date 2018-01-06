@@ -1,11 +1,16 @@
-from golang:alpine
+from golang as build
 
-run apk update && apk add git
+env CGO_ENABLED 0
+env GOOS linux
+
 run go get github.com/bitly/oauth2_proxy
 
+from gcr.io/distroless/base
+
+copy --from=build /go/bin/oauth2_proxy /oauth2_proxy
 add oauth2_proxy.conf /data/oauth2_proxy.conf
-add entrypoint.sh /entrypoint.sh
 
 expose 4180
 
-entrypoint ["/entrypoint.sh"]
+entrypoint ["/oauth2_proxy"]
+cmd ["-config", "/data/oauth2_proxy.conf"]
