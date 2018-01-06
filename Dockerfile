@@ -12,5 +12,4 @@ add oauth2_proxy.conf /data/oauth2_proxy.conf
 
 expose 4180
 
-entrypoint ["/oauth2_proxy"]
-cmd ["-config", "/data/oauth2_proxy.conf"]
+entrypoint ["/oauth2_proxy", "-config", "/data/oauth2_proxy.conf"]
