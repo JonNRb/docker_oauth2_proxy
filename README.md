@@ -1,5 +1,3 @@
-# oauth2\_proxy
-
-[![](https://images.microbadger.com/badges/version/jonnrb/oauth2_proxy.svg)](https://microbadger.com/images/jonnrb/oauth2_proxy "Get your own version badge on microbadger.com")
+# oauth2\_proxy [![Docker Automated Build](https://img.shields.io/docker/automated/jonnrb/oauth2_proxy.svg)](https://hub.docker.com/r/jonnrb/oauth2_proxy/) [![Docker Build Status](https://img.shields.io/docker/build/jonnrb/oauth2_proxy.svg)](https://hub.docker.com/r/jonnrb/oauth2_proxy/)
 
 App oauth2 authorization 4 free. Uses github.com/bitly/oauth2\_proxy.
