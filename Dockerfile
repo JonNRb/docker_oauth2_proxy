@@ -1,4 +1,4 @@
-from golang as build
+from golang:1.10.3 as build
 
 env CGO_ENABLED 0
 env GOOS linux
