@@ -1,7 +1,7 @@
 kind: pipeline
 name: default
 steps:
-- name: docker:
+- name: docker
   image: plugins/docker
   settings:
     repo: jonnrb/oauth2_proxy
