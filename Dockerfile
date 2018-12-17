@@ -1,4 +1,4 @@
-from golang:1.11.2 as build
+from quay.io/jonnrb/go as build
 run CGO_ENABLED=0 go get github.com/bitly/oauth2_proxy
 
 from gcr.io/distroless/base
